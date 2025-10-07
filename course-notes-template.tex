@@ -1,0 +1,53 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=15mm,top=25mm
+}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{theoremref}
+\usepackage{fancyhdr}
+\usepackage{dhortcmds}
+\usepackage{dhortthms}
+
+% TODO - Update these
+\def\instructorname{Instructor Name}
+\def\authorname{Author Name}
+\def\term{Term}
+\def\coursecode{Course code}
+\def\coursename{Course name}
+\def\schoolname{School name}
+
+% Pagestyle Setup
+\pagestyle{fancy}
+\setlength{\headheight}{13.6pt}
+
+% Headers and Footers
+\renewcommand{\headrulewidth}{0.4pt}% default is 0.4pt
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+\lhead{\rightmark} % \rightmark gives the current section
+\rhead{Instructor: \instructorname}
+\lfoot{\coursecode\space - Lecture Notes}
+\rfoot{\authorname\space - \term}
+
+\begin{document}
+
+% Title Page
+\thispagestyle{empty}
+\title{\coursecode\space\coursename\space - Lecture Notes}
+\author{Instructor: \instructorname \\ \LaTeX'd by \authorname}
+\date{\schoolname\space- \term}
+\maketitle
+\pagebreak
+
+% Table of Contents
+\tableofcontents
+\pagebreak
+
+% Insert Content Here
+
+\end{document}
